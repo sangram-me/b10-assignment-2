@@ -195,7 +195,7 @@ nav {
 /* mobile devices */
 @media screen and (max-width: 576px) {
         header {
-                height: 1450px;
+                height: 1220px;
         }
         .dropdown-menu {
                 visibility: visible;
@@ -219,33 +219,20 @@ nav {
                 line-height: 60px;
         }
         .btn-primary {
-                color: white;
-                background-color: rgb(230, 83, 60);
                 font-size: .8rem;
-                font-weight: 600;
-                border: none;
                 padding: 0.9rem 2rem;
                 border-radius: 1.7rem;
-                cursor: pointer;
         }
         .btn-secondary {
-                color: white;
-                background: none;
                 font-size: .8rem;
-                font-weight: 600;
-                border: 1px solid white;
                 padding: 0.9rem 2rem;
-                border-radius: 1.3rem;
-                cursor: pointer;
+                border-radius: 1.7rem;
         }
         .banner-btn1 {
               margin-right: 10px;
-              margin-bottom: 20px;
       }
         .banner-image {
-                width: 70%;
-        }
-        .banner-image {
+              margin: 0px 0px 0px 20px;
                 width: 100%;
         }
         .banner-card1 {
