@@ -39,7 +39,7 @@ body {
 
 /* header styles */
 header {
-        height: 100vh;
+        height: 680px;
         background-color: black;
         background-image: linear-gradient(
                 to bottom,
@@ -137,6 +137,8 @@ nav {
         height: auto;
         max-width: 50%;
         justify-content: center;
+        position: relative;
+        bottom: 0px;
 }
 .banner-card1 {
         display: flex;
@@ -192,6 +194,55 @@ nav {
         font-size: 0.8rem;
         color: rgba(239, 237, 232, 0.65);
 }
+
+/* habit section */
+.habit{
+       background-color: #000000;
+}
+.habit-desc{
+       margin: 0px auto;
+       max-width: 550px;
+       text-align: center;
+       padding-top: 4rem;
+       padding-bottom: 1rem;
+}
+.habit-desc h2{
+       font-size: 2.5rem;
+       color: white;
+       margin: 0px;
+}
+.habit-desc p{
+       color: rgba(255, 255, 255, 0.5);
+       font-size: .8rem;
+       line-height: 1.4rem;
+}
+
+.habit-container{
+       gap: 30px;
+       max-width: 80%;
+       margin: 0px auto;
+       display: flex;
+       justify-content: space-between;
+}
+.habit-card{
+       text-align: center;
+       padding: 30px;
+}
+.habit-card img{
+       border-radius: 50%;
+}
+.habit-card h4{
+       margin: 1.1rem;
+       font-size: 1.2rem;
+       font-weight: 600;
+       color: white;
+}
+.habit-card p{
+       color: rgba(255, 255, 255, 0.5);
+       font-size: .8rem;
+       line-height: 1.4rem;
+}
+
 /* mobile devices */
 @media screen and (max-width: 576px) {
         header {
@@ -247,4 +298,12 @@ nav {
                 margin-top: -463px;
                 margin-left: 183px;
         }
+        .habit{
+              padding: 1rem;
+        }
+        .habit-container{
+              gap: 0px;
+              max-width: 80%;
+              flex-direction: column;
+       }
 }
