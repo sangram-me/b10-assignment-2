@@ -139,6 +139,7 @@ nav {
         justify-content: center;
         position: relative;
         bottom: 0px;
+        text-align: center;
 }
 .banner-card1 {
         display: flex;
@@ -170,14 +171,15 @@ nav {
         color: rgba(239, 237, 232, 0.65);
 }
 .banner-card2 {
-        padding-left: 30px;
+        text-align: left;
+        padding-left: 10px;
         gap: 1rem;
         box-sizing: border-box;
         border: 1px solid rgba(255, 255, 255, 0.1);
         border-radius: 12px;
         backdrop-filter: blur(20px);
         background: rgba(48, 48, 48, 0.54);
-        width: 210px;
+        width: 180px;
         height: 100px;
 
         margin-top: -313px;
@@ -188,11 +190,14 @@ nav {
         font-weight: 900;
         margin: 12px 0px;
         color: rgb(250, 250, 249);
+        text-align: left;
 }
 .banner-card2 p {
         font-weight: 400;
         font-size: 0.8rem;
         color: rgba(239, 237, 232, 0.65);
+        text-align: center;
+        text-align: left;
 }
 
 main {
@@ -298,9 +303,116 @@ main {
 }
 /* bmi section */
 .bmi {
-        height: 100px;
-        background-color: aliceblue;
+        background: rgb(34, 34, 34);
 }
+.bmi-main-container {
+        padding: 3rem;
+        max-width: 80%;
+        margin: 0px auto;
+        display: flex;
+        justify-content: space-between;
+        gap: 5rem;
+}
+.bmi-container {
+        max-width: 48%;
+}
+.bmi-container h3 {
+        color: rgb(255, 255, 255);
+        font-size: 1.7rem;
+        font-weight: 700;
+        margin: 10px 0px;
+        padding-bottom: 2rem;
+}
+table {
+        border: 3px solid rgba(255, 255, 255, 0.1);
+        border-collapse: collapse;
+}
+td {
+        padding: 0.7rem 5rem 0.7rem 0.7rem;
+        border: 3px solid rgba(255, 255, 255, 0.1);
+        border-collapse: collapse;
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 0.9rem;
+        font-weight: 400;
+}
+th {
+        padding: 0.7rem 5rem 0.7rem 0.7rem;
+        color: white;
+        padding: 0.7rem;
+        border: 3px solid rgba(255, 255, 255, 0.1);
+        border-collapse: collapse;
+}
+
+.bmi-form {
+        max-width: 52%;
+}
+.bmi-form h3 {
+        color: rgb(255, 255, 255);
+        font-size: 1.7rem;
+        font-weight: 700;
+        margin: 10px 0px 0px;
+        padding-bottom: 2rem;
+}
+.bmi-form p {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+        margin-top: 0px;
+        padding-top: 0px;
+        padding-bottom: 1rem;
+}
+.form-div1,
+.form-div2,
+.form-div3 {
+        margin-bottom: 20px;
+}
+.form-div1,
+.form-div2 {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+}
+.form-div1 input {
+        width: 44%;
+        padding: 0.8rem;
+        border-radius: 0.4rem;
+        background: rgba(255, 255, 255, 0.1);
+        border: none;
+}
+.form-div2 input {
+        width: 44%;
+        padding: 0.8rem;
+        border-radius: 0.4rem;
+        background: rgba(255, 255, 255, 0.1);
+        border: none;
+}
+.form-div2 select {
+        width: 48.4%;
+        padding: 0.8rem;
+        border-radius: 0.4rem;
+        color: rgb(127, 125, 125);
+        background: rgba(255, 255, 255, 0.1);
+        border: none;
+}
+.form-div3 select {
+        width: 100%;
+        padding: 0.8rem;
+        border-radius: 0.4rem;
+        background: rgba(255, 255, 255, 0.1);
+        border: none;
+        color: rgb(127, 125, 125);
+}
+.form-btn {
+        color: white;
+        background-color: rgb(230, 83, 60);
+        font-size: 0.8rem;
+        font-weight: 600;
+        border: none;
+        padding: 0.8rem 4rem;
+        border-radius: 1.7rem;
+        cursor: pointer;
+}
+
 /* team section */
 .team {
         max-width: 80%;
@@ -444,7 +556,7 @@ footer {
 }
 .footer-1 p {
         color: rgba(255, 255, 255, 0.5);
-        font-size: .9rem;
+        font-size: 0.9rem;
         font-weight: 400;
         line-height: 1.4rem;
         max-width: 450px;
@@ -469,17 +581,16 @@ footer {
         text-decoration: none;
         cursor: pointer;
 }
-footer hr{
-       max-width: 85%;
-       color: rgba(255, 255, 255, 0.5);
-
+footer hr {
+        max-width: 85%;
+        color: rgba(255, 255, 255, 0.5);
 }
-footer > p{
-       text-align: center;
-       padding: 1.6rem 0px 1.7rem;
-       margin: 0;
-       color: rgba(255, 255, 255, 0.5);
-       font-size: 1.2rem;
+footer > p {
+        text-align: center;
+        padding: 1.6rem 0px 1.7rem;
+        margin: 0;
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 1.2rem;
 }
 /* mobile devices */
 @media screen and (max-width: 576px) {
@@ -522,7 +633,7 @@ footer > p{
         }
         .banner-image {
                 margin: 0px 0px 0px 20px;
-                width: 100%;
+                width: 80%;
         }
         .banner-card1 {
                 width: 210px;
@@ -531,10 +642,14 @@ footer > p{
                 margin-left: -30px;
         }
         .banner-card2 {
-                width: 180px;
-                height: 100px;
-                margin-top: -463px;
-                margin-left: 183px;
+                width: 150px;
+                height: 80px;
+                margin-top: -493px;
+                margin-left: 175px;
+                text-align: center;
+        }
+        .banner h4 {
+                font-size: 1.5rem;
         }
         .habit {
                 padding: 1rem;
@@ -579,7 +694,40 @@ footer > p{
                 width: 100%;
                 border-radius: 1rem;
         }
+        .bmi-main-container {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                max-width: 100%;
+        }
+        .bmi-container {
+                max-width: 100%;
+        }
+        .bmi-container h3 {
+                /* width: 300px; */
+        }
+        .bmi-form {
+                max-width: 100%;
+                margin: 1rem auto;
+        }
+        .form-div1,
+        .form-div2,
+        .form-div3 {
+                margin-bottom: 0.6rem;
+        }
+        .form-div2 input {
+                width: 40%;
+        }
 
+        .form-div2 select {
+              width: 48%;
+              padding: 0.8 rem;
+              border: none;
+      }
+
+      .form-btn{
+       margin-top: 1.5rem;
+      }
         .team-container {
                 max-width: 85%;
                 grid-template-columns: repeat(1, 1fr);
@@ -608,6 +756,6 @@ footer > p{
                 text-align: center;
         }
         .footer-container {
-              grid-template-columns: repeat(1,1fr);
-      }
+                grid-template-columns: repeat(1, 1fr);
+        }
 }
